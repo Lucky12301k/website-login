@@ -15,6 +15,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     .then(data => {
         if (data.success) {
             alert("Registration successful!");
+             window.location.href="main.html"
         } else {
             alert("Registration failed. Please try again.");
         }
