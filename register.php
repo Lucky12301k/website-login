@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $data->username;
     $password = password_hash($data->password, PASSWORD_BCRYPT);
 
-    $conn = new mysqli("localhost", "id21255006_teddy", "Lucky12345@", "id21255006_teddy");
+    $conn = new mysqli("db4free.net", "luckykpr", "l1u2c3k4y5", "luckykpr");
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
